@@ -29,7 +29,7 @@ class Search extends React.Component {
             return;
         }
 
-        fetch(process.env.REACT_APP_API_URL, {
+        fetch(process.env.REACT_APP_API_URL + 'search', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
