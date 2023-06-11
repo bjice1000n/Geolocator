@@ -31,5 +31,5 @@ Once you pull the code, it consists of two parts:<br />
    `run start`<br /><br />
    That should start local server and open React application into default browser.
 
-By default Google Maps API class is used. In order to change it either to use OpenStreetMaps API or other - just change the class that is instantiate in GeolocatoionRepository constructor. Keep in mind that OSM is just simulating a real request and don't require valid key.
+By default Google Maps API class is used. In order to change it either to use OpenStreetMaps API or other - just change the class that is instantiate in GeolocatoionRepository constructor. Keep in mind that OSM is just simulating a real request and don't require valid key.<br /><br />
 If new API have to be inplemented then new class must be created which have to extend MapsAPI abstract class and implement IAddressCoordinates interface. Currently assumption is that new API will be authenticate via _GET parameter along with search parameter in url using curl. Once new class is created implementing it should be similar to the OSM API described above.
